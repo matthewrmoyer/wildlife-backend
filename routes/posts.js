@@ -20,6 +20,19 @@ router.post('/', (req, res) => {
 			description: req.body.description,
 			image_url: req.body.image_url
 		})
+		.then(data => {
+			res.send(req.body)
+		})
 })
 
+// {
+//     "user_email": "casey@gmail.com",
+//     "user_name": "Casey",
+//     "latitude": "40.56",
+//     "longitude": "-105.721",
+//     "specie": "Bobcat",
+//     "description": "First time ever seeing a bobcat!",
+//     "created_at": "2017-05-26T20:18:23.915Z",
+//     "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Bobcat2.jpg"
+//   },
 module.exports = router;
