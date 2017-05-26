@@ -12,8 +12,8 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
 	knex('post')
 		.insert({
-			user_email: req.body.email,
-			user_name: req.body.name,
+			user_email: req.body.user_email,
+			user_name: req.body.user_name,
 			latitude: req.body.latitude,
 			longitude: req.body.longitude,
 			specie: req.body.specie,
