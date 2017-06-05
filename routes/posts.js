@@ -65,9 +65,7 @@ router.post('/image', upload.single('image'), (req, res) => {
 		} else {
 			res.json(`{"success": true}`)
 		}
-	}).then(function(data) {
-			res.send(data)
-		});
+	});
 })
 
 // {
